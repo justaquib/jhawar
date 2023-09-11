@@ -30,7 +30,7 @@ export default function Home() {
                         In acknowledgment of the often overwhelming nature of financial management, we extend our unwavering commitment to offer you 
                         the essential guidance you need. Our aim is to alleviate the complexities that can make this task seem daunting. With our expert support, 
                         you can navigate through the intricacies of financial management with greater confidence and ease, ultimately achieving a stronger grasp on 
-                        your financial well-being.className
+                        your financial well-being class.
                       </p>
                       <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Register with us</button>
                       <a href="#about-me" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:border dark:bg-transparent dark:border-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Know about me</a>
