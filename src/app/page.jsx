@@ -33,7 +33,7 @@ export default function Home() {
                         your financial well-being.className
                       </p>
                       <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Register with us</button>
-                      <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:border dark:bg-transparent dark:border-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Know about me</button>
+                      <a href="#about-me" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:border dark:bg-transparent dark:border-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Know about me</a>
                     </div>
                   </div>
                 </div>
@@ -45,11 +45,11 @@ export default function Home() {
                     <h1 className="mb-4 text-4xl font-extrabold tracking-tight first-letter:leading-none text-white md:text-5xl lg:text-6xl dark:text-gray-900">Manage your finance better</h1>
                     <p className="mb-4 text-sm font-normal text-gray-500 lg:text-xl dark:text-gray-400">Managing your finances better is an essential skill for achieving your financial goals and securing your financial future.</p>
                     <div className='flex flex-col space-y-4 mb-8'>
-                      <div className='flex flex-row space-x-4 text-gray-500 lg:text-xl dark:text-gray-400'>
+                      <div className='flex flex-row space-x-4 text-gray-500 text-sm lg:text-xl dark:text-gray-400'>
                         <p>• Create a Budget</p>
                         <p>• Set Financial Goals</p>
                       </div>
-                      <div className='flex flex-row space-x-4 text-gray-500 lg:text-xl dark:text-gray-400'>
+                      <div className='flex flex-row space-x-4 text-gray-500 text-sm lg:text-xl dark:text-gray-400'>
                         <p>• Debt Management</p>
                         <p>• Savings and Investments</p>
                       </div>
@@ -99,7 +99,7 @@ export default function Home() {
                       <div className="grid md:grid-cols-2 gap-8">
                           <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
                               <a href="#" className="bg-green-100 text-green-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-green-400 mb-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-piggy-bank-fill" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-piggy-bank-fill" viewBox="0 0 16 16">
                                   <path d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595Zm7.173 3.876a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199Zm-8.999-.65a.5.5 0 1 1-.276-.96A7.613 7.613 0 0 1 7.964 3.5c.763 0 1.497.11 2.18.315a.5.5 0 1 1-.287.958A6.602 6.602 0 0 0 7.964 4.5c-.64 0-1.255.09-1.826.254ZM5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"/>
                                 </svg>
                                 <span className='ms-1'>Saving</span>
@@ -117,7 +117,7 @@ export default function Home() {
                           </div>
                           <div className="bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 rounded-lg p-8 md:p-12">
                               <a href="#" className="bg-purple-100 text-purple-800 text-xs font-medium inline-flex items-center px-2.5 py-0.5 rounded-md dark:bg-gray-700 dark:text-purple-400 mb-2">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-hourglass-bottom" viewBox="0 0 16 16">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-hourglass-bottom" viewBox="0 0 16 16">
                                   <path d="M2 1.5a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-1v1a4.5 4.5 0 0 1-2.557 4.06c-.29.139-.443.377-.443.59v.7c0 .213.154.451.443.59A4.5 4.5 0 0 1 12.5 13v1h1a.5.5 0 0 1 0 1h-11a.5.5 0 1 1 0-1h1v-1a4.5 4.5 0 0 1 2.557-4.06c.29-.139.443-.377.443-.59v-.7c0-.213-.154-.451-.443-.59A4.5 4.5 0 0 1 3.5 3V2h-1a.5.5 0 0 1-.5-.5zm2.5.5v1a3.5 3.5 0 0 0 1.989 3.158c.533.256 1.011.791 1.011 1.491v.702s.18.149.5.149.5-.15.5-.15v-.7c0-.701.478-1.236 1.011-1.492A3.5 3.5 0 0 0 11.5 3V2h-7z"/>
                                 </svg>
                                   <span className='ms-1'>Early Saving</span>
@@ -273,8 +273,8 @@ export default function Home() {
                 </section>
                 
                 {/* {About Me} */}
-                <section>
-                  <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center text-left sm:space-y-0 sm:space-x-4 lg:space-x-12 bg-slate-900 dark:bg-slate-100 rounded-2xl lg:p-24 px-6 py-8">
+                <section id="about-me">
+                  <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center text-left sm:space-y-0 sm:space-x-4 lg:space-x-12 bg-slate-900 dark:bg-slate-100 rounded-2xl lg:p-16 px-6 py-8">
                       <div className="flex flex-wrap items-center">
                         <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 lg:pr-6">
                           <div
@@ -288,17 +288,22 @@ export default function Home() {
                           </div>
                         </div>
 
-                        <div className="w-full shrink-0 grow-0 basis-auto lg:w-6/12 lg:pl-6">
+                        <div className="w-full shrink-0 grow-0 basis-auto lg:w-7/12 lg:pl-6">
                           <div className='text-start'>
                             <h1 className="mb-4 text-4xl font-extrabold tracking-tight first-letter:leading-none text-white md:text-5xl lg:text-6xl dark:text-gray-900">About Me</h1>
-                            <h2 className="mb-4 text-4xl font-extrabold tracking-tight first-letter:leading-none text-white md:text-5xl lg:text-3xl dark:text-gray-900">We invest in the world’s potential</h2>
+                            <h2 className="mb-4 text-4xl font-extrabold tracking-tight first-letter:leading-none text-white md:text-5xl lg:text-3xl dark:text-gray-900">
+                              Mastering Multidisciplinary Excellence
+                            </h2>
                             <p className="mb-8 text-sm font-normal text-gray-500 lg:text-xl dark:text-gray-400">
-                              The Alumni Memorial Scholar designation is the highest honor within the Colgate admission process. Applicants chosen for this
-                              distinction possess an exceptional academic record, and have established themselves as leaders in both the classroom and their
-                              communities. Scholars receive personalized mentorship from faculty affiliates, funding to support student projects, and a
-                              supportive community of scholarship.
+                              In my journey, I've evolved into a highly motivated and versatile professional, proficient across various domains. 
+                              Armed with a solid academic foundation in accounting, econometrics, mathematical modeling, and statistical analysis, 
+                              I navigate complex financial landscapes with precision. However, my capabilities extend beyond academia. Profound communication 
+                              skills and effective leadership are qualities that have not only fueled my academic accomplishments but have also been 
+                              instrumental in excelling in arenas like Model United Nations and debate, where articulation and negotiation are key. 
+                              I extend my passion for knowledge as a tutor and researcher, fervently dedicated to disseminating and expanding understanding. 
+                              My diverse skill set underscores my unwavering commitment to continual growth and the relentless pursuit of excellence.
                             </p>
-                            <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download my resume</button>
+                            <a href="/assets/resume.pdf" download className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-4 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Download my resume</a>
                           </div>
                         </div>
                       </div>
