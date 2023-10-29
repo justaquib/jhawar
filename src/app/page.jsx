@@ -1,21 +1,36 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Image from 'next/image';
+import { gql } from "@apollo/client";
+import createApolloClient from "../../apollo-client";
+import { fetcher } from '@/lib/api';
+import Global from '@/constants/global';
 
-export default function Home() {
+export default async function Home() {
+  
+  // const nav = await fetcher(`${Global.API}/navbars`,Global.AUTHORIZATION);
+
   return (
     <main>
       <div className="h-screen w-full">
         <Header/>
-
         <section className="bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
               <section>
+                {/* <div>
+                  {
+                    nav.data.map((nav,i) => (
+                      <div className='text-white' key={i}>
+                        {nav.attributes.name}
+                      </div>
+                    ))
+                  }
+                </div> */}
                 <div className="mb-16 flex flex-wrap">
                   <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-4/12 lg:pr-6">
                     <div
                       className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20" data-te-ripple-init data-te-ripple-color="light">
-                      <Image width={480} height={100} className="object-cover max-w-full rounded-lg w-full" src="https://ik.imagekit.io/v24zntfh1/Jhawar/Jhawar1_0IFdo5hCd.jpeg?updatedAt=1693629441165" alt=""/>
+                      <Image width={480} height={100} className="object-cover max-w-full rounded-lg w-full" src="https://ik.imagekit.io/v24zntfh1/Jhawar/Jhawar1_0IFdo5hCd.jpeg?updatedAt=1693629441165" alt="Siddhant Jhawar" priority={false} />
                       <a href="#!">
                         <div
                           className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
@@ -32,9 +47,10 @@ export default function Home() {
                         you can navigate through the intricacies of financial management with greater confidence and ease, ultimately achieving a stronger grasp on 
                         your financial well-being class.
                       </p>
-                      <button type="button" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Register with us</button>
+                      <a href='/auth/sign-up' className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Register with us</a>
                       <a href="#about-me" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:border dark:bg-transparent dark:border-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Know about me</a>
                     </div>
+                    
                   </div>
                 </div>
               </section>
@@ -58,16 +74,16 @@ export default function Home() {
                   </div>
                   <div className="grid grid-cols-2 lg:gap-8 gap-4">
                       <div>
-                          <Image width={480} height={100}  className="object-cover max-w-full rounded-lg" src="https://ik.imagekit.io/v24zntfh1/Jhawar/bills-1558396_tUuQbt949G.jpg?updatedAt=1694366930958" alt=""/>
+                          <Image width={480} height={100}  className="object-cover max-w-full rounded-lg" src="https://ik.imagekit.io/v24zntfh1/Jhawar/bills-1558396_tUuQbt949G.jpg?updatedAt=1694366930958" alt="" priority={false} />
                       </div>
                       <div>
-                          <Image width={480} height={100}  className="object-cover  max-w-full rounded-lg" src="https://ik.imagekit.io/v24zntfh1/Jhawar/monthly%20-bill_Mb2GvkZhs4.jpg?updatedAt=1694366907042" alt=""/>
+                          <Image width={480} height={100}  className="object-cover  max-w-full rounded-lg" src="https://ik.imagekit.io/v24zntfh1/Jhawar/monthly%20-bill_Mb2GvkZhs4.jpg?updatedAt=1694366907042" alt="" priority={false} />
                       </div>
                       <div>
-                          <Image width={480} height={100}  className="object-cover max-w-full rounded-lg" src="https://ik.imagekit.io/v24zntfh1/Jhawar/shared-expenses_DePx7sHf4y.jpg?updatedAt=1694366879993" alt=""/>
+                          <Image width={480} height={100}  className="object-cover max-w-full rounded-lg" src="https://ik.imagekit.io/v24zntfh1/Jhawar/shared-expenses_DePx7sHf4y.jpg?updatedAt=1694366879993" alt="" priority={false} />
                       </div>
                       <div>
-                          <Image width={480} height={100}  className="object-cover max-w-full rounded-lg" src="https://ik.imagekit.io/v24zntfh1/Jhawar/college-savings_zZgu7D3Xj.jpg?updatedAt=1694366845688" alt=""/>
+                          <Image width={480} height={100}  className="object-cover max-w-full rounded-lg" src="https://ik.imagekit.io/v24zntfh1/Jhawar/college-savings_zZgu7D3Xj.jpg?updatedAt=1694366845688" alt="" priority={false} />
                       </div>
                   </div>
                   <div className='d-flex justify-start items-start lg:hidden block'>
@@ -279,7 +295,7 @@ export default function Home() {
                         <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-5/12 lg:pr-6">
                           <div
                             className="ripple relative overflow-hidden rounded-lg bg-cover bg-[50%] bg-no-repeat shadow-lg dark:shadow-black/20" data-te-ripple-init data-te-ripple-color="light">
-                            <Image src="https://ik.imagekit.io/v24zntfh1/Jhawar/Jhawar2_HZ8UyMf6p.jpeg?updatedAt=1693629441086" width={320} height={100} className='object-cover w-full rounded-lg' />
+                            <Image src="https://ik.imagekit.io/v24zntfh1/Jhawar/Jhawar2_HZ8UyMf6p.jpeg?updatedAt=1693629441086" width={320} height={100} className='object-cover w-full rounded-lg' priority={false} />
                             <a href="#!">
                               <div
                                 className="absolute top-0 right-0 bottom-0 left-0 h-full w-full overflow-hidden bg-[hsl(0,0%,98.4%,0.2)] bg-fixed opacity-0 transition duration-300 ease-in-out hover:opacity-100">
