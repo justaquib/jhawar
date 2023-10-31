@@ -1,10 +1,10 @@
 import Footer from '@/components/Footer';
 import Header from '@/components/Header';
 import Image from 'next/image';
-import { gql } from "@apollo/client";
-import createApolloClient from "../../apollo-client";
-import { fetcher } from '@/lib/api';
-import Global from '@/constants/global';
+// import { gql } from "@apollo/client";
+// import createApolloClient from "../../apollo-client";
+// import { fetcher } from '@/lib/api';
+// import Global from '@/constants/global';
 
 export default async function Home() {
   
