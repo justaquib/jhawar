@@ -1,6 +1,9 @@
-import Footer from '@/components/Footer';
-import Header from '@/components/Header';
+import Footer from '../components/Footer';
+import Header from '../components/Header';
+import  NavBarData  from '../components/providers/navbar/data';
+import { fetcher } from '../lib/api';
 import Image from 'next/image';
+import Global from '../constants/Global';
 // import { gql } from "@apollo/client";
 // import createApolloClient from "../../apollo-client";
 // import { fetcher } from '@/lib/api';
@@ -8,8 +11,8 @@ import Image from 'next/image';
 
 export default async function Home() {
   
-  // const nav = await fetcher(`${Global.API}/navbars`,Global.AUTHORIZATION);
-
+  // const nav = await fetcher('/api/misc');
+  // console.log(await NavBarData())
   return (
     <main>
       <div className="h-screen w-full">
@@ -17,15 +20,16 @@ export default async function Home() {
         <section className="bg-white dark:bg-gray-900">
             <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
               <section>
-                {/* <div>
-                  {
+                <div>
+                  {/* {NavBarData} */}
+                  {/* {
                     nav.data.map((nav,i) => (
                       <div className='text-white' key={i}>
                         {nav.attributes.name}
                       </div>
                     ))
-                  }
-                </div> */}
+                  } */}
+                </div>
                 <div className="mb-16 flex flex-wrap">
                   <div className="mb-6 w-full shrink-0 grow-0 basis-auto lg:mb-0 lg:w-4/12 lg:pr-6">
                     <div
